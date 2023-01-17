@@ -83,7 +83,7 @@ public class Main {
         double percent = 0.07;
         int month = 0; // порядковый номер месяца
         int yearsDeposit = 9; // Вася поверил в себя
-        int monthsDeposit = yearsDeposit*12;
+        int monthsDeposit = yearsDeposit * 12;
         while (month < monthsDeposit) {
             deposit = deposit + deposit * percent; // работаю в криптовалюте =)
             month++;
@@ -98,8 +98,8 @@ public class Main {
         int days = 31;
         int friday = 1;
         for (int today = 1; today <= days; today++) {
-            if (today == friday || today%7 == friday){
-                System.out.printf("Сегодня пятница, %d-е число. Необходимо подготовить отчет\n",today);
+            if (today == friday || today % 7 == friday) {
+                System.out.printf("Сегодня пятница, %d-е число. Необходимо подготовить отчет\n", today);
             }
         }
 
@@ -107,5 +107,15 @@ public class Main {
 
     public static void task8() {
         System.out.println("Задача 8");
-    }
+        int yearNow = 2023;
+        int startPeriod = yearNow - 200;
+        int stopPeriod = yearNow + 100;
+        int yearsCometRate = 79;
+        int yearComet;
+        for (yearComet = 0; yearComet < stopPeriod; yearComet += yearsCometRate) {
+            if (yearComet > startPeriod) {
+                System.out.println(yearComet);
+            }
+        }
+    } // думаю есть разные варианты решения
 }
