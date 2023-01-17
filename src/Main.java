@@ -39,6 +39,17 @@ public class Main {
 
     public static void task3() {
         System.out.println("Задача 3");
+        int population = 12_000_000;   // население
+        double birthRate = 17 / 1000f;     // рождаемость на 1000 человек
+        double mortalityRate = 8 / 1000f;  // смертность на 1000 человек
+        int years = 0;
+        while (years < 10) {
+            population = (int)(population + population*(birthRate-mortalityRate)); // конечно лучше привести к int каждый рейт отдельно
+            years++;
+            System.out.printf("Год %d, численность населения составляет %d \n", years,population);
+        }
+        // итог 13_124_802, с приведением отдельно получилось бы 13_124_807
+
     }
 
     public static void task4() {
