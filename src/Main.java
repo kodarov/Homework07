@@ -18,7 +18,7 @@ public class Main {
         while (deposit < 2_459_000) {
             deposit = deposit + payment;
             month++;
-            System.out.printf("Месяц %d сумма накоплений равна %.2f \n", month, deposit);
+            System.out.printf("Месяц %d сумма накоплений равна %.2f рублей \n", month, deposit);
         }
     }
 
