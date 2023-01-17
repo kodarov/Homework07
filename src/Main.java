@@ -95,6 +95,14 @@ public class Main {
 
     public static void task7() {
         System.out.println("Задача 7");
+        int days = 31;
+        int friday = 1;
+        for (int today = 1; today <= days; today++) {
+            if (today == friday || today%7 == friday){
+                System.out.printf("Сегодня пятница, %d-е число. Необходимо подготовить отчет\n",today);
+            }
+        }
+
     }
 
     public static void task8() {
