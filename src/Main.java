@@ -44,16 +44,23 @@ public class Main {
         double mortalityRate = 8 / 1000f;  // смертность на 1000 человек
         int years = 0;
         while (years < 10) {
-            population = (int)(population + population*(birthRate-mortalityRate)); // конечно лучше привести к int каждый рейт отдельно
+            population = (int) (population + population * (birthRate - mortalityRate)); // конечно лучше привести к int каждый рейт отдельно
             years++;
-            System.out.printf("Год %d, численность населения составляет %d \n", years,population);
+            System.out.printf("Год %d, численность населения составляет %d \n", years, population);
         }
         // итог 13_124_802, с приведением отдельно получилось бы 13_124_807
-
     }
 
     public static void task4() {
         System.out.println("Задача 4");
+        double deposit = 15_000; // вклад
+        double percent = 0.07;
+        int month = 0; // порядковый номер месяца
+        while (deposit < 12_000_000) {
+            deposit = deposit + deposit * percent; // работаю в криптовалюте =)
+            month++;
+            System.out.printf("Месяц %d сумма накоплений равна %.2f рублей \n", month, deposit);
+        }
     }
 
     public static void task5() {
