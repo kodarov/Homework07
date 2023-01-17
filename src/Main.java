@@ -79,6 +79,18 @@ public class Main {
 
     public static void task6() {
         System.out.println("Задача 6");
+        double deposit = 15_000; // вклад
+        double percent = 0.07;
+        int month = 0; // порядковый номер месяца
+        int yearsDeposit = 9; // Вася поверил в себя
+        int monthsDeposit = yearsDeposit*12;
+        while (month < monthsDeposit) {
+            deposit = deposit + deposit * percent; // работаю в криптовалюте =)
+            month++;
+            if (month % 6 == 0) { // иногда посматриваю депозит
+                System.out.printf("Месяц %d сумма накоплений равна %.2f рублей \n", month, deposit);
+            }
+        }
     }
 
     public static void task7() {
