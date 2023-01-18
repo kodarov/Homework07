@@ -30,9 +30,8 @@ public class Main {
             System.out.print(a + " ");
         }
         System.out.println();
-        for (int i = 0; i < 10; i++) {
+        for (; a > 0; a--) {
             System.out.print(a + " ");
-            a--;
         }
         System.out.println();
     }
