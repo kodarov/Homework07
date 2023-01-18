@@ -96,12 +96,16 @@ public class Main {
         System.out.println("Задача 7");
         int days = 31;
         int friday = 1;
-        for (int today = 1; today <= days; today++) {
+/*        for (int today = 1; today <= days; today++) {
             if (today == friday || today % 7 == friday) {
                 System.out.printf("Сегодня пятница, %d-е число. Необходимо подготовить отчет\n", today);
             }
-        }
+        }*/
 
+        while (friday <= days) {
+            System.out.printf("Сегодня пятница, %d-е число. Необходимо подготовить отчет\n", friday);
+            friday+=7;
+        } //с меньшей итерацией
     }
 
     public static void task8() {
